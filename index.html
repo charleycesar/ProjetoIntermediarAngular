@@ -1,0 +1,65 @@
+    <!doctype html>
+    <html ng-app="app">
+    <head>
+    <title>Intermediar Rj</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link href="/onpage/app/dependencias/angular-caroseu.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style type="text/css">
+        body{
+            padding-top: 70px;
+        }
+        .navbar{
+            background-color:#3574AA; 
+        }
+        .navbar-inverse .navbar-nav > li > a{
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+    <body role="document">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- to pensando em colocar aqui a logo mais ela nao tem-->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ng-class="{active: activetab == '/onpage'}">
+                <a href="/onepage">Home</a>
+            </li>
+            <li ng-class="{active: activetab == '/objetivos'}">
+                <a href="objetivos">Objetivos</a>
+            </li>
+            <li ng-class="{active: activetab == '/equipe'}">
+                <a href="equipe">Equipe</a>
+            </li>
+            <li ng-class="{active: activetab == '/galeria'}">
+                <a href="galeria">Galeria</a>
+            </li>
+            <li ng-class="{active: activetab == '/quem_somos'}">
+                <a href="quem_somos">Quem Somos</a>
+            </li>
+            <li ng-class="{active: activetab == '/contato'}">
+                <a href="contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+        <div ng-view></div>
+    </div>
+     
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script src="app/dependencias/angular-caroseu.min.js"></script>
+    <script src="//code.angularjs.org/1.2.7/angular-touch.js"></script>
+     
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+    </body>
+    </html>
