@@ -1,16 +1,15 @@
 <link href='/onpage/app/dependencias/angular-carousel.css' rel='stylesheet' type='text/css'>
 <link href='/onpage/app/dependencias/demo.css' rel='stylesheet' type='text/css'>
 <div class="col-xs-12 col-sm-12" ng-controller="GaleriaCtrl">
-	<div class="page-header">
-		<h1>Galeria</h1>
+    <div class="page-header">
+	<h1>Galeria</h1>
 	</div>
     <div class="carousel-demo">
         <ul rn-carousel rn-carousel-controls rn-carousel-index="carouselIndex" rn-carousel-buffered class="carousel1">
-            <li ng-repeat="slide in slides" ng-class="'id-' + slide.id">
-                <div ng-style="{'background-image': 'url(' + slide.img + ')'}"  class="bgimage">
+            <li ng-repeat="slide in Images">
+                <div ng-style="{'background-image': 'url(' + slide.img + ')'}"  class="bgimage img-responsive">
                 </div>
             </li>
         </ul>
     </div>
 </div>
-
