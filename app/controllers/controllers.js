@@ -82,9 +82,15 @@ app.controller('EquipeCtrl', function($rootScope, $location){
 
 app.controller('GaleriaCtrl', function($rootScope, $scope, $location){
     path = '/app/images/galeria/';
+    fullPath = '';
     if($location.host() == 'localhost'){
       path = '/onpage/app/images/galeria/'
+      fullPath = '/onpage';
+
+      
     }
+    $scope.local = fullPath;
+    
     $scope.Images = [{
       label:'Mônica Farias',
       'descricao':'Psicóloga, mestre em Psicologia pela UFF, especialista em Psicomotricidade pelo Anthropos. Mediadora escolar, acompanhante terapêuta (Esquizoanalise). Orientadora Educacional seguimento Educação Infantil e Creche ISERJ .',
