@@ -86,8 +86,6 @@ app.controller('GaleriaCtrl', function($rootScope, $scope, $location){
     if($location.host() == 'localhost'){
       path = '/onpage/app/images/galeria/'
       fullPath = '/onpage';
-
-      
     }
     $scope.local = fullPath;
     
@@ -112,8 +110,15 @@ app.controller('GaleriaCtrl', function($rootScope, $scope, $location){
     $rootScope.activetab = $location.path();
 });
  
-app.controller('QuemSomosCtrl', function($rootScope, $location){
+app.controller('QuemSomosCtrl', function($rootScope, $location, $scope){
     $rootScope.activetab = $location.path();
+    fullPath = '';
+    if($location.host() == 'localhost'){
+      path = '/onpage/app/images/galeria/'
+      fullPath = '/onpage';
+    }
+    $scope.local = fullPath;
+    
 });
 
 app.controller('ContatoCtrl', function($rootScope, $location){
