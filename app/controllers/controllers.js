@@ -1,5 +1,10 @@
-app.controller('HomeCtrl', function($rootScope, $location){
+app.controller('HomeCtrl', function($scope,$rootScope, $location){
     $rootScope.activetab = $location.path();
+    fullPath = '';
+    if($location.host() == 'localhost'){
+      fullPath = '/onpage/';
+    }
+    $scope.local = fullPath;
 });
  
 app.controller('ObjetivosCtrl', function($rootScope, $location){

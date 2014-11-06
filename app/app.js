@@ -12,7 +12,7 @@
     $routeProvider
      
     // para a rota '/', carregaremos o template home.html e o controller 'HomeCtrl'
-    .when('/onpage', {
+    .when('/home', {
     templateUrl : path+'app/views/home.html',
     controller : 'HomeCtrl',
     })
