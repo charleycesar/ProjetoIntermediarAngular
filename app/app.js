@@ -1,9 +1,9 @@
     Imagens = [];
     var app = angular.module('app',['ngRoute','angular-carousel']);
      
-    app.config(function($routeProvider, $locationProvider,$templateCache)
+    app.config(function($routeProvider, $locationProvider)
     {
-          $templateCache.removeAll();  
+          
     // remove o # da url
     $locationProvider.html5Mode(true);
     path = '/';
