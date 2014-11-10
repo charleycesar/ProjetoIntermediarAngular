@@ -81,6 +81,13 @@
     <script src="app/dependencias/angular-carousel.min.js"></script>
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script type="text/javascript">
+    var path = '';
+    if(location.host == 'localhost'){
+        console.log('eh local');
+        path = '/onpage'
+    }
+    </script>
     <script src="app/app.js"></script>
     <script src="app/controllers/controllers.js"></script>
     </body>

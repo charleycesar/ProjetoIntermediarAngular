@@ -1,10 +1,6 @@
 app.controller('HomeCtrl', function($scope,$rootScope, $location){
     $rootScope.activetab = $location.path();
-    fullPath = '';
-    if($location.host() == 'localhost'){
-      fullPath = '/onpage/';
-    }
-    $scope.local = fullPath;
+    $scope.path = path;
 });
  
 app.controller('ObjetivosCtrl', function($rootScope, $location){
@@ -24,87 +20,78 @@ app.controller('ObjetivosCtrl', function($rootScope, $location){
  
 app.controller('EquipeCtrl', function($rootScope, $location){
     $rootScope.activetab = $location.path();
-      fullPath = '';
-    if($location.host() == 'localhost'){
-      fullPath = '/onpage';
-    }
     $rootScope.equipe = [{
       'nome':'Mônica Farias',
       'descricao':'Psicóloga, mestre em Psicologia pela UFF, especialista em Psicomotricidade pelo Anthropos. Mediadora escolar, acompanhante terapêuta (Esquizoanalise). Orientadora Educacional seguimento Educação Infantil e Creche ISERJ .',
-      'imagem':fullPath+'/app/images/pic01.jpg'
+      'imagem':path+'/app/images/pic01.jpg'
     },{
       'nome':'Kamilla Cardoso',
       'descricao':'pedagoga, especialista em Alfabetização, Leitura e Escrita pela UFRJ, Técnica de Assuntos Educacionais do Colégio Pedro Ii, atuando como orientadora Educacional. Já atuou como professora do primeiro.',
-      'imagem':fullPath+'/app/images/pic02.jpg'
+      'imagem':path+'/app/images/pic02.jpg'
     },{
       'nome':'Mariana Barbosa de Castro',
       'descricao':'psicóloga pela UFF, atualmente (Junho/2013) fazendo mediação, no Colégio Coração Eucarístico- Flamengo, criança com diagnostico de melingocele.',
-      'imagem':fullPath+'/app/images/pic03.jpg'
+      'imagem':path+'/app/images/pic03.jpg'
     },{
       'nome':'Isabel Vilela',
       'descricao':'Pedagoga- Mediando criança autista no Colégio Coração Eucarístico- Flamengo.',
-      'imagem':fullPath+'/app/images/pic04.jpg'
+      'imagem':path+'/app/images/pic04.jpg'
     },{
       'nome':'Rafael Mantuano',
       'descricao':'pedagogo UERJ, mediando no colégio Legrand em Botafogo. ( Em 2014).',
-      'imagem':fullPath+'/app/images/pic05.jpg'
+      'imagem':path+'/app/images/pic05.jpg'
     },{
       'nome':'Maria Celeste',
       'descricao':'Estudante de pedagogia. (Argentina) fazendo mediação no Colégio Oficina do Fazer CEPAENI – Nova Iguaçu (em 2014).',
-      'imagem':fullPath+'/app/images/pic06.jpg'
+      'imagem':path+'/app/images/pic06.jpg'
     },{
       'nome':'Delayne Cunha',
       'descricao':'estudante de pedagogia, fazendo mediação no colégio Oficina do Fazer-CEPAENI – RJ.',
-      'imagem':fullPath+'/app/images/Delayne.jpg'
+      'imagem':path+'/app/images/Delayne.jpg'
     },{
       'nome':'Carla Giovanna',
       'descricao':'Psicóloga, fazendo mediação no colégio Legrand, em Botafogo.',
-      'imagem':fullPath+'/app/images/pic05.jpg'
+      'imagem':path+'/app/images/pic05.jpg'
     },{
       'nome':'Elisabete Marques',
       'descricao':'Professora, Psicopedagoga, fazendo mediação na creche Talento em Laranjeiras.',
-      'imagem':fullPath+'/app/images/Elisabete.jpg'
+      'imagem':path+'/app/images/Elisabete.jpg'
     },{
       'nome':'Carolina Reina',
       'descricao':'Psicopedagoga (Argentina), fazendo mediação no Colégio Municipal Alberto Barth no Flamengo.',
-      'imagem':fullPath+'/app/images/pic04.jpg'
+      'imagem':path+'/app/images/pic04.jpg'
     },{
       'nome':'Tarna Morena',
       'descricao':'Professora de História e Inglês e Psicopedagoga, fazendo mediação no Colégio Cepaeni Oficina do Fazer em Nova Iguaçu.',
-      'imagem':fullPath+'/app/images/tama.jpg'
+      'imagem':path+'/app/images/tama.jpg'
     },{
       'nome':'Juliana Regina',
       'descricao':'Estudante de psicologia, UFF, mediação colégio Curiosidade.',
-      'imagem':fullPath+'/app/images/Juliana.jpg'
+      'imagem':path+'/app/images/Juliana.jpg'
     }
     ];
 });
 
 app.controller('GaleriaCtrl', function($rootScope, $scope, $location){
-    path = '/app/images/galeria/';
-    fullPath = '';
-    if($location.host() == 'localhost'){
-      path = '/onpage/app/images/galeria/'
-      fullPath = '/onpage';
-    }
-    $scope.local = fullPath;
+    pathGallery = path+'/app/images/galeria/';
+    $scope.path = path;
     
     $scope.Images = [{
       label:'Mônica Farias',
       'descricao':'Psicóloga, mestre em Psicologia pela UFF, especialista em Psicomotricidade pelo Anthropos. Mediadora escolar, acompanhante terapêuta (Esquizoanalise). Orientadora Educacional seguimento Educação Infantil e Creche ISERJ .',
-      img:path+'IMG_8765.JPG'
+      img:pathGallery+'IMG_8765.JPG'
     },{
       'nome':'Kamilla Cardoso',
       'descricao':'pedagoga, especialista em Alfabetização, Leitura e Escrita pela UFRJ, Técnica de Assuntos Educacionais do Colégio Pedro Ii, atuando como orientadora Educacional. Já atuou como professora do primeiro.',
-      img:path+'IMG_8767.JPG'
+      img:pathGallery+'IMG_8767.JPG'
     },{
       'nome':'Mariana Barbosa de Castro',
       'descricao':'psicóloga pela UFF, atualmente (Junho/2013) fazendo mediação, no Colégio Coração Eucarístico- Flamengo, criança com diagnostico de melingocele.',
-      img:path+'IMG_8775.JPG'
+      img:pathGallery+'IMG_8775.JPG'
     },{
       'nome':'Mariana Barbosa de Castro',
       'descricao':'psicóloga pela UFF, atualmente (Junho/2013) fazendo mediação, no Colégio Coração Eucarístico- Flamengo, criança com diagnostico de melingocele.',
-      img:path+'IMG_8824.JPG'
+      img:pathGallery+'IMG_8824.JPG'
     }
     ];
     $rootScope.activetab = $location.path();
@@ -112,12 +99,7 @@ app.controller('GaleriaCtrl', function($rootScope, $scope, $location){
  
 app.controller('QuemSomosCtrl', function($rootScope, $location, $scope){
     $rootScope.activetab = $location.path();
-    fullPath = '';
-    if($location.host() == 'localhost'){
-      path = '/onpage/app/images/galeria/'
-      fullPath = '/onpage';
-    }
-    $scope.local = fullPath;
+    $scope.path = path;
     
 });
 
