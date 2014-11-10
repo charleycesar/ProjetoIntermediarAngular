@@ -103,6 +103,18 @@ app.controller('QuemSomosCtrl', function($rootScope, $location, $scope){
     
 });
 
-app.controller('ContatoCtrl', function($rootScope, $location){
+app.controller('ContatoCtrl', function($rootScope, $location, $scope,$http){
     $rootScope.activetab = $location.path();
+    $scope.enviarEmail = function(){
+      data = $scope.contato;
+      url = path+'/app/views/enviar.php';
+      $http({
+        method: "post",
+        url: url,
+        data: data
+      }).success(function(d){
+        $scope.failed = d;
+        $scope.enviado = d;
+      });
+    }
 });
