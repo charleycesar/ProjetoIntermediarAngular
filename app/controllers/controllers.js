@@ -77,21 +77,23 @@ app.controller('GaleriaCtrl', function($rootScope, $scope, $location){
     $scope.path = path;
     
     $scope.Images = [{
-      label:'Mônica Farias',
-      'descricao':'Psicóloga, mestre em Psicologia pela UFF, especialista em Psicomotricidade pelo Anthropos. Mediadora escolar, acompanhante terapêuta (Esquizoanalise). Orientadora Educacional seguimento Educação Infantil e Creche ISERJ .',
       img:pathGallery+'IMG_8765.JPG'
     },{
-      'nome':'Kamilla Cardoso',
-      'descricao':'pedagoga, especialista em Alfabetização, Leitura e Escrita pela UFRJ, Técnica de Assuntos Educacionais do Colégio Pedro Ii, atuando como orientadora Educacional. Já atuou como professora do primeiro.',
       img:pathGallery+'IMG_8767.JPG'
     },{
-      'nome':'Mariana Barbosa de Castro',
-      'descricao':'psicóloga pela UFF, atualmente (Junho/2013) fazendo mediação, no Colégio Coração Eucarístico- Flamengo, criança com diagnostico de melingocele.',
       img:pathGallery+'IMG_8775.JPG'
     },{
-      'nome':'Mariana Barbosa de Castro',
-      'descricao':'psicóloga pela UFF, atualmente (Junho/2013) fazendo mediação, no Colégio Coração Eucarístico- Flamengo, criança com diagnostico de melingocele.',
       img:pathGallery+'IMG_8824.JPG'
+    },{
+      img:pathGallery+'IMG1.jpg'
+    },{
+      img:pathGallery+'IMG2.JPG'
+    },{
+      img:pathGallery+'IMG3.JPG'
+    },{
+      img:pathGallery+'IMG4.jpg'
+    },{
+      img:pathGallery+'IMG5.jpg'
     }
     ];
     $rootScope.activetab = $location.path();
