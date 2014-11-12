@@ -77,13 +77,13 @@ app.controller('GaleriaCtrl', function($rootScope, $scope, $location){
     $scope.path = path;
     
     $scope.Images = [{
-      img:pathGallery+'IMG_8765.JPG'
+      img:pathGallery+'IMG_8765_min.jpg'
     },{
-      img:pathGallery+'IMG_8767.JPG'
+      img:pathGallery+'IMG_8767_min.jpg'
     },{
-      img:pathGallery+'IMG_8775.JPG'
+      img:pathGallery+'IMG_8775_min.jpg'
     },{
-      img:pathGallery+'IMG_8824.JPG'
+      img:pathGallery+'IMG_8824_min.jpg'
     },{
       img:pathGallery+'IMG1.jpg'
     },{
