@@ -3,11 +3,11 @@
 		<h1>Contato</h1>
 	</div>
 	<div class="contact-form">
-		<div class="alert alert-warning" ng-hide="failed" ng-init="failed = true">
+		<div class="alert alert-warning" ng-show="failed == 'falha'" ng-init="failed = true">
 		    <a href="#" class="close" data-dismiss="alert">&times;</a>
 		    <strong>Error!</strong> Houve um erro ao enviar o email tente novamente mais tarde.
 		</div>
-		<div class="alert alert-success" ng-show="enviado" ng-init="enviado = false">
+		<div class="alert alert-success" ng-show="enviado == 'sucesso'" ng-init="enviado = false">
 			<a href="#" class="close" data-dismiss="alert">&times;</a>
 			<strong>Enviado com sucesso!</strong> .
 		</div>

@@ -115,6 +115,7 @@ app.controller('ContatoCtrl', function($rootScope, $location, $scope,$http){
         url: url,
         data: data
       }).success(function(d){
+        console.log(d);
         $scope.failed = d;
         $scope.enviado = d;
       });

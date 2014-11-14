@@ -18,9 +18,9 @@ $email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $em
 
 
 if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){
-	return true; 
+	echo 'sucesso';
 }else{
-	return false;
+	echo 'falha';
 }
 	
 ?>
