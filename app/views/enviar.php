@@ -2,8 +2,8 @@
 $data = json_decode($HTTP_RAW_POST_DATA);
 
 $email_remetente = "contato@intermediar.com"; 
-$email_destinatario = "charleycesar@gmail.com"; 
-$email_reply = "charleycesar@gmail.com";
+$email_destinatario = "monicafariasrj@hotmail.com"; 
+$email_reply = "monicafariasrj@hotmail.com";
 $email_assunto = "Contato via site";
 
 $nome = $data->nome;
