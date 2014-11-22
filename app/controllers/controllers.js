@@ -14,20 +14,38 @@ app.controller('ObjetivosCtrl', function($rootScope, $location){
 		  "objetivo":"É ele que possui a relação mais estreita com o aluno especial e sua escuta, se torna fundamental. Porém sua forma de contratação ainda gera muitas dúvidas de conduta à escola. Em muitos momentos, a escola, o professor não se sente confortável com a sua presença, e o sentimento de ameaça pode assombrar, por não sabermos como nos relacionar com ele. Devemos esclarecer em primeiro lugar, que independente de onde venha a sua remuneração, o mediador tem como cliente o aluno. Ele deverá fazer todas as intervenções necessárias junto a escola, à equipe e à família sempre que necessitar."},{
 		  "objetivo":"Porém alguns acordos são necessários entre mediador e escola, como por exemplo, buscarem sempre saídas juntos para os desafios do cotidiano, antes de acionarem ajuda à família. Por esse motivo, é sempre necessário acolher o profissional de mediação, em suas necessidades básicas de comunicação, não o excluindo, não o delegando todas as responsabilidades. Dialogando sempre, sobre as possíveis soluções, independente de onde provém o seu salário. O mediador deve ser considerado da equipe de trabalho e ele, acolhido em suas demandas. O mediador poderá ser atendido por uma equipe externa para pensar estratégias de trabalho, sempre os acordando com a escola."},{
 		  "objetivo":"O mediador deverá acionar a família para alguma intervenção, somente em último caso, por esse motivo é vital que a escola se responsabilize pelo aluno, caso o mediador perceba que a escola não se interessa pelo aluno e não colabora para o seu processo, é dever do mediador informar esse aspecto à equipe, de que a família poderá questiona-lo sobre o processo e que não caberá a ele se omitir, tendo em vista seu compromisso com o desenvolvimento do aluno. Nesses casos, gera-se uma relação difícil entre escola e mediação e isso pode se evitar com o comprometimento da escola."},{
-		  "objetivo":"Quando há envolvimento, a mediação percebe isso, sem precisar cobrar da escola. O papel do mediador em relação ao aluno é descobrir ao tempo do aluno o seu funcionamento e com ele utilizar as ferramentas produzidas pela equipe para incluí-lo. Proporcionar autonomia para que o aluno possa frequentar a escola, sozinho, sem mediação. Portanto, construção constante de autonomia cognitiva e social. É a arte do encontro, que a mediação e aluno terão de descobrir no processo."
-	}];
+      "objetivo":"Quando há envolvimento, a mediação percebe isso, sem precisar cobrar da escola. O papel do mediador em relação ao aluno é descobrir ao tempo do aluno o seu funcionamento e com ele utilizar as ferramentas produzidas pela equipe para incluí-lo. Proporcionar autonomia para que o aluno possa frequentar a escola, sozinho, sem mediação. Portanto, construção constante de autonomia cognitiva e social. É a arte do encontro, que a mediação e aluno terão de descobrir no processo."
+  }];
 });
  
 app.controller('EquipeCtrl', function($rootScope, $location){
     $rootScope.activetab = $location.path();
-    $rootScope.equipe = [{
+    $rootScope.equipe = [
+    {
+      'nome':'Kamilla Cardoso',
+      'descricao':'pedagoga, especialista em Alfabetização, Leitura e Escrita pela UFRJ, Técnica de Assuntos Educacionais do Colégio Pedro Ii, atuando como orientadora Educacional. Já atuou como professora do primeiro.',
+      'imagem':path+'/app/images/kamila.jpg'
+    },{
+      'nome':'Delayne Cunha',
+      'descricao':'estudante de pedagogia, fazendo mediação no colégio Oficina do Fazer-CEPAENI – RJ.',
+      'imagem':path+'/app/images/Delayne.jpg'
+    },{
+      'nome':'Elisabete Marques',
+      'descricao':'Professora, Psicopedagoga, fazendo mediação na creche Talento em Laranjeiras.',
+      'imagem':path+'/app/images/Elisabete.jpg'
+    },{
+      'nome':'Tarna Morena',
+      'descricao':'Professora de História e Inglês e Psicopedagoga, fazendo mediação no Colégio Cepaeni Oficina do Fazer em Nova Iguaçu.',
+      'imagem':path+'/app/images/tama.jpg'
+    },{
+      'nome':'Juliana Regina',
+      'descricao':'Estudante de psicologia, UFF, mediação colégio Curiosidade.',
+      'imagem':path+'/app/images/Juliana.jpg'
+    }
+    /*{
       'nome':'Mônica Farias',
       'descricao':'Psicóloga, mestre em Psicologia pela UFF, especialista em Psicomotricidade pelo Anthropos. Mediadora escolar, acompanhante terapêuta (Esquizoanalise). Orientadora Educacional seguimento Educação Infantil e Creche ISERJ .',
       'imagem':path+'/app/images/pic01.jpg'
-    },{
-      'nome':'Kamilla Cardoso',
-      'descricao':'pedagoga, especialista em Alfabetização, Leitura e Escrita pela UFRJ, Técnica de Assuntos Educacionais do Colégio Pedro Ii, atuando como orientadora Educacional. Já atuou como professora do primeiro.',
-      'imagem':path+'/app/images/pic02.jpg'
     },{
       'nome':'Mariana Barbosa de Castro',
       'descricao':'psicóloga pela UFF, atualmente (Junho/2013) fazendo mediação, no Colégio Coração Eucarístico- Flamengo, criança com diagnostico de melingocele.',
@@ -45,30 +63,14 @@ app.controller('EquipeCtrl', function($rootScope, $location){
       'descricao':'Estudante de pedagogia. (Argentina) fazendo mediação no Colégio Oficina do Fazer CEPAENI – Nova Iguaçu (em 2014).',
       'imagem':path+'/app/images/pic06.jpg'
     },{
-      'nome':'Delayne Cunha',
-      'descricao':'estudante de pedagogia, fazendo mediação no colégio Oficina do Fazer-CEPAENI – RJ.',
-      'imagem':path+'/app/images/Delayne.jpg'
-    },{
       'nome':'Carla Giovanna',
       'descricao':'Psicóloga, fazendo mediação no colégio Legrand, em Botafogo.',
       'imagem':path+'/app/images/pic05.jpg'
     },{
-      'nome':'Elisabete Marques',
-      'descricao':'Professora, Psicopedagoga, fazendo mediação na creche Talento em Laranjeiras.',
-      'imagem':path+'/app/images/Elisabete.jpg'
-    },{
       'nome':'Carolina Reina',
       'descricao':'Psicopedagoga (Argentina), fazendo mediação no Colégio Municipal Alberto Barth no Flamengo.',
       'imagem':path+'/app/images/pic04.jpg'
-    },{
-      'nome':'Tarna Morena',
-      'descricao':'Professora de História e Inglês e Psicopedagoga, fazendo mediação no Colégio Cepaeni Oficina do Fazer em Nova Iguaçu.',
-      'imagem':path+'/app/images/tama.jpg'
-    },{
-      'nome':'Juliana Regina',
-      'descricao':'Estudante de psicologia, UFF, mediação colégio Curiosidade.',
-      'imagem':path+'/app/images/Juliana.jpg'
-    }
+    },*/
     ];
 });
 
