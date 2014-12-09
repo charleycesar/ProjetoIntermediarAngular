@@ -41,12 +41,24 @@ app.controller('EquipeCtrl', function($rootScope, $location){
       'nome':'Juliana Regina',
       'descricao':'Estudante de psicologia, UFF, mediação colégio Curiosidade.',
       'imagem':path+'/app/images/Juliana.jpg'
-    }
-    /*{
-      'nome':'Mônica Farias',
-      'descricao':'Psicóloga, mestre em Psicologia pela UFF, especialista em Psicomotricidade pelo Anthropos. Mediadora escolar, acompanhante terapêuta (Esquizoanalise). Orientadora Educacional seguimento Educação Infantil e Creche ISERJ .',
-      'imagem':path+'/app/images/pic01.jpg'
     },{
+      'nome':'Carla Giovanna',
+      'descricao':'Psicóloga.',
+      'imagem':path+'/app/images/Carla_Giovana.jpg'
+    },{
+      'nome':'Carolina Reina',
+      'descricao':'Psicopedagoga.',
+      'imagem':path+'/app/images/Carolina_Reina.jpg'
+    },{
+      'nome':'Mônica Farias',
+      'descricao':'Psicóloga e coordenadora do grupo.',
+      'imagem':path+'/app/images/MonicaFarias.jpg'
+    },{
+      'nome':'Maria Celeste',
+      'descricao':'Estudante de pedagogia.',
+      'imagem':path+'/app/images/Maria_Celeste.jpg'
+    }
+    /*,{
       'nome':'Mariana Barbosa de Castro',
       'descricao':'psicóloga pela UFF, atualmente (Junho/2013) fazendo mediação, no Colégio Coração Eucarístico- Flamengo, criança com diagnostico de melingocele.',
       'imagem':path+'/app/images/pic03.jpg'
@@ -58,19 +70,8 @@ app.controller('EquipeCtrl', function($rootScope, $location){
       'nome':'Rafael Mantuano',
       'descricao':'pedagogo UERJ, mediando no colégio Legrand em Botafogo. ( Em 2014).',
       'imagem':path+'/app/images/pic05.jpg'
-    },{
-      'nome':'Maria Celeste',
-      'descricao':'Estudante de pedagogia. (Argentina) fazendo mediação no Colégio Oficina do Fazer CEPAENI – Nova Iguaçu (em 2014).',
-      'imagem':path+'/app/images/pic06.jpg'
-    },{
-      'nome':'Carla Giovanna',
-      'descricao':'Psicóloga, fazendo mediação no colégio Legrand, em Botafogo.',
-      'imagem':path+'/app/images/pic05.jpg'
-    },{
-      'nome':'Carolina Reina',
-      'descricao':'Psicopedagoga (Argentina), fazendo mediação no Colégio Municipal Alberto Barth no Flamengo.',
-      'imagem':path+'/app/images/pic04.jpg'
-    },*/
+    },
+    */
     ];
 });
 
