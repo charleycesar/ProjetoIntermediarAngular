@@ -57,12 +57,12 @@ app.controller('EquipeCtrl', function($rootScope, $location){
       'nome':'Maria Celeste',
       'descricao':'Estudante de pedagogia.',
       'imagem':path+'/app/images/Maria_Celeste.jpg'
+    },{
+      'nome':'Arlinda',
+      'descricao':'Professora e Psicopedagoga.',
+      'imagem':path+'/app/images/arlinda.jpg'
     }
     /*,{
-      'nome':'Mariana Barbosa de Castro',
-      'descricao':'psicóloga pela UFF, atualmente (Junho/2013) fazendo mediação, no Colégio Coração Eucarístico- Flamengo, criança com diagnostico de melingocele.',
-      'imagem':path+'/app/images/pic03.jpg'
-    },{
       'nome':'Isabel Vilela',
       'descricao':'Pedagoga- Mediando criança autista no Colégio Coração Eucarístico- Flamengo.',
       'imagem':path+'/app/images/pic04.jpg'
