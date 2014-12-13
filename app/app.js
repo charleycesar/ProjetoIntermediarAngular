@@ -1,5 +1,5 @@
     Imagens = [];
-    var app = angular.module('app',['ngRoute','angular-carousel']);
+    var app = angular.module('app',['ngRoute','angular-carousel','ngSanitize']);
      
     app.config(function($routeProvider, $locationProvider)
     {
