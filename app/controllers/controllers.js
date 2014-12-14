@@ -24,7 +24,7 @@ app.controller('EquipeCtrl', function($rootScope, $location){
     $rootScope.equipe = [
     {
       'nome':'Mônica Farias',
-      'descricao':'Mônica Farias, psicóloga, Mestre em Psicologia pela UFF e coordenadora do Grupo de mediação Intermediar.',
+      'descricao':'Psicóloga, Mestre em Psicologia pela UFF e coordenadora do Grupo de mediação Intermediar.',
       'imagem':path+'/app/images/MonicaFarias.jpg'
     },{
       'nome':'Kamilla Cardoso',
